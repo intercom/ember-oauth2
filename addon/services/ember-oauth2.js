@@ -5,20 +5,28 @@ import Ember from 'ember';
   * @license   Licensed under MIT license
   *            See https://raw.github.com/amkirwan/ember-oauth2/master/LICENSE
 <<<<<<< HEAD
+<<<<<<< HEAD
   * @version   2.0.3-beta
 =======
   * @version   2.0.1-beta
 >>>>>>> update version to 2.0.1-beta
+=======
+  * @version   2.0.2-beta
+>>>>>>> tag 2.0.2-beta
   *
   * @module ember-oauth2
   * @class ember-oauth2
   */
 export default Ember.Service.extend(Ember.Evented, {
 <<<<<<< HEAD
+<<<<<<< HEAD
   VERSION: '2.0.3-beta',
 =======
   VERSION: '2.0.1-beta',
 >>>>>>> update version to 2.0.1-beta
+=======
+  VERSION: '2.0.2-beta',
+>>>>>>> tag 2.0.2-beta
   /**
    * initialize with the providerId to find in
    * EmberENV['ember-oauth2'] config
