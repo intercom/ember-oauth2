@@ -255,7 +255,11 @@ export default Ember.Service.extend(Ember.Evented, {
         '&redirect_uri=' + encodeURIComponent(this.get('redirectUri')) +
         '&client_id=' + encodeURIComponent(this.get('clientId')) +
         '&state=' + encodeURIComponent(this.get('state'));
+<<<<<<< HEAD
     if (this.get('scope')) {
+=======
+    if (this.get('scope')) { 
+>>>>>>> Fix typo in ember-oauth2.js
       uri += '&scope=' + encodeURIComponent(this.get('scope')).replace('%20', '+');
     }
     return uri;
