@@ -241,8 +241,8 @@ export default Ember.Service.extend(Ember.Evented, {
         '&redirect_uri=' + encodeURIComponent(this.get('redirectUri')) +
         '&client_id=' + encodeURIComponent(this.get('clientId')) +
         '&state=' + encodeURIComponent(this.get('state'));
-    if (this.get('scope')) {
-      uri += '&scope=' + encodeURIComponent(this.get('.scope')).replace('%20', '+');
+    if (this.get('scope')) { 
+      uri += '&scope=' + encodeURIComponent(this.get('scope')).replace('%20', '+');
     }
     return uri;
   },
