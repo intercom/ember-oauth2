@@ -4,37 +4,13 @@ import Ember from 'ember';
   * @overview OAuth2 addon for Emberjs that stores tokens in the browsers localStorage
   * @license   Licensed under MIT license
   *            See https://raw.github.com/amkirwan/ember-oauth2/master/LICENSE
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   * @version   2.0.3-beta
-=======
-  * @version   2.0.1-beta
->>>>>>> update version to 2.0.1-beta
-=======
-  * @version   2.0.2-beta
->>>>>>> tag 2.0.2-beta
-=======
-  * @version   2.0.3-beta
->>>>>>> update to 2.0.3
   *
   * @module ember-oauth2
   * @class ember-oauth2
   */
 export default Ember.Service.extend(Ember.Evented, {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   VERSION: '2.0.3-beta',
-=======
-  VERSION: '2.0.1-beta',
->>>>>>> update version to 2.0.1-beta
-=======
-  VERSION: '2.0.2-beta',
->>>>>>> tag 2.0.2-beta
-=======
-  VERSION: '2.0.3-beta',
->>>>>>> update to 2.0.3
   /**
    * initialize with the providerId to find in
    * EmberENV['ember-oauth2'] config
@@ -263,15 +239,7 @@ export default Ember.Service.extend(Ember.Evented, {
         '&redirect_uri=' + encodeURIComponent(this.get('redirectUri')) +
         '&client_id=' + encodeURIComponent(this.get('clientId')) +
         '&state=' + encodeURIComponent(this.get('state'));
-<<<<<<< HEAD
-<<<<<<< HEAD
     if (this.get('scope')) {
-=======
-    if (this.get('scope')) { 
->>>>>>> Fix typo in ember-oauth2.js
-=======
-    if (this.get('scope')) {
->>>>>>> update to 2.0.3
       uri += '&scope=' + encodeURIComponent(this.get('scope')).replace('%20', '+');
     }
     return uri;
