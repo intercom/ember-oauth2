@@ -1,16 +1,28 @@
+---
+dist: trusty
+
 language: node_js
+node_js:
+  - "6.11"
+
 sudo: false
-branches: 
-  only: 
-    - master
-    - pre
-node_js: 
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "iojs"
+
+cache:
+  directories:
+    - node_modules
+
+addons:
+  chrome: stable
+
 before_install:
-  - npm install -g grunt-cli
-  - npm install -g testem
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - npm config set spin false
   - npm install -g bower
+  - bower --version
+
+install:
+  - npm install
   - bower install
+
+script:
+  - npm test
